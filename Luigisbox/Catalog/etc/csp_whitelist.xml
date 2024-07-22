@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+            <values>
+                <value id="luigisbox-scripts-script-src" type="host">https://scripts.luigisbox.com</value>
+                <value id="luigisbox-cdn-script-src" type="host">https://cdn.luigisbox.com</value>
+            </values>
+        </policy>
+        <policy id="style-src">
+            <values>
+                <value id="luigisbox-cdn-style-src" type="host">https://cdn.luigisbox.com</value>
+            </values>
+        </policy>
+        <policy id="connect-src">
+            <values>
+                <value id="luigisbox-api-connect-src" type="host">https://api.luigisbox.com</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>
