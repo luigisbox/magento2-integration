@@ -13,7 +13,7 @@
             <resource ref="Magento_Backend::content"/>
         </resources>
     </route>
-    <route method="GET" url="/V1/parent-products-skus">
+    <route url="/V1/parent-products-skus" method="POST">
 		<service class="Luigisbox\Catalog\Api\ParentProductsInterface" method="getParentSkusByChildIds"/>
 		<resources>
 			<resource ref="Magento_Catalog::products"/>
