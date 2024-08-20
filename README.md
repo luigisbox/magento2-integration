@@ -6,17 +6,14 @@
 
 ## Introduction
 
-Official Luigi's Box integration for Magento 2 framework. This extension provides a way of implementing Luigi's Box services on your Magento 2 website.
+Official Luigi's Box integration for Adobe Commerce (Magento) platform. [Luigi's Box](https://www.luigisbox.com) is an Award Winning Product Discovery Solution for eCommerce, providing Search, Product Listing, Product Recommendations and related Analytics.
 
-Luigi's Box services include:
-  - improved search & autocomplete
-  - improved analytics
-  - improved recommender
-  - and much more. See at [Luigi's Box](https://www.luigisbox.com/)
+This repository holds composer package of a Magento2 extension, providing all the prerequisites for integration between M2 store & Luigi's Box services. 
 
-Extension imports a special Luigi's Box script into to the HTML header of the website, which provides a way to utilize Luigi's Box services.
-
-Extension also provides custom REST endpoints and GraphQL attributes, in order to successfully synchronize Magento 2 catalog with Luigi's Box.
+Upon its installation and activation, this extension: 
+- Creates an account/project/site at Luigi's Box.
+- Includes a special Luigi's Box script into to the HTML header of the store. The whole (frontend) integration of Luigi's Box services is delivered through the script.
+- Ensures all the product data is synchronized to Luigi's Box Catalog Services. To achieve this, it creates custom REST endpoints and GraphQL attributes used by the synchronization process.
 
 ## Installation
 
