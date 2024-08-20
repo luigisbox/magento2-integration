@@ -1,26 +1,41 @@
-LuigisBox Magento 2 integration module
-==================
+![image](https://www.luigisbox.com/app/uploads/2022/06/logo.svg)
 
-This is a module for Magento 2 shops to integrate LuigisBox services.
-- includes LBX script on website to run LBX services
-- provides custom REST endpoints and GRAPHQL attributes for synchronization of catalog with LBX
 
-Manual installation
-------------
+# Luigi's Box Magento 2 Extension
 
-- Copy `Luigisbox` directory to `your-magento2-root-directory/app/code`
 
-Please run **all** of the following commands in your Magento 2 root directory:
-- ```php bin/magento setup:upgrade```
-- ```php bin/magento setup:di:compile```
-- ```php bin/magento setup:static-content:deploy```
-- ```php bin/magento cache:flush```
+## Introduction
 
-Activating services:
-- go to `Magento 2 Administration -> System -> Extensions -> Integrations`
-  - you should see `LuigisboxIntegration`
-- click on `activate` button next to `LuigisboxIntegration`
-  - installation process starts and setup form pops up
-  - your catalog is being synchronized with our services in the background
-- fill in the setup form and you will be redirected to Luigisbox Web Application
-  - here you can set up our services
+Official Luigi's Box integration for Adobe Commerce (Magento) platform. [Luigi's Box](https://www.luigisbox.com) is an Award Winning Product Discovery Solution for eCommerce, providing Search, Product Listing, Product Recommendations and related Analytics.
+
+This repository holds composer package of a Magento2 extension, providing all the prerequisites for integration between M2 store & Luigi's Box services. 
+
+Upon its installation and activation, this extension: 
+- Creates an account/project/site at Luigi's Box.
+- Includes a special Luigi's Box script into to the HTML header of the store. The whole (frontend) integration of Luigi's Box services is delivered through the script.
+- Ensures all the product data is synchronized to Luigi's Box Catalog Services. To achieve this, it creates custom REST endpoints and GraphQL attributes used by the synchronization process.
+
+## Installation
+
+1. **Add the Luigi's Box extension to your Magento 2 shop:** (this can be done manually or by using `composer`)
+    - Manually:
+        - Copy this GitHub repository to `app/code/Luigisbox/Catalog` within your Magento folder
+    - Using `composer`:
+        - Run `composer require luigisbox/catalog` in your Magento 2 root directory
+
+2. **Run the following commands in your Magento 2 root directory:**
+    ```bash
+    php bin/magento setup:upgrade
+    php bin/magento setup:di:compile
+    php bin/magento setup:static-content:deploy -f
+    php bin/magento cache:flush
+    ```
+
+3. **Activate Luigi's Box services:**
+    1. Go to `Magento 2 Administration -> System -> Extensions -> Integrations`
+        - you should see `LuigisboxIntegration`
+    2. Click on `activate` button next to `LuigisboxIntegration`
+        - installation process starts and setup form pops up
+        - your catalog is being synchronized with our services in the background
+    3. Fill in the setup form and you will be redirected to Luigi's Box Web Application
+        - here you can set up our services
