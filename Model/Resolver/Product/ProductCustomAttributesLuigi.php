@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Luigisbox\Catalog\Model\Resolver\Product;
+namespace Luigisbox\Integration\Model\Resolver\Product;
 
 use Magento\Catalog\Api\Data\ProductAttributeInterface;
 use Magento\Catalog\Model\FilterProductCustomAttribute;

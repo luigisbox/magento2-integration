@@ -19,9 +19,9 @@ Upon its installation and activation, this extension:
 
 1. **Add the Luigi's Box extension to your Magento 2 shop:** (this can be done manually or by using `composer`)
     - Manually:
-        - Copy this GitHub repository to `app/code/Luigisbox/Catalog` within your Magento folder
+        - Copy this GitHub repository to `app/code/Luigisbox/Integration` within your Magento folder
     - Using `composer`:
-        - Run `composer require luigisbox/catalog` in your Magento 2 root directory
+        - Run `composer require luigisbox/magento2-integration` in your Magento 2 root directory
 
 2. **Run the following commands in your Magento 2 root directory:**
     ```bash

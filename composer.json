@@ -1,12 +1,12 @@
 {
-  "name": "luigisbox/catalog",
+  "name": "luigisbox/magento2-integration",
   "description": "Luigisbox services integration",
   "type": "magento2-module",
   "version": "1.0.0",
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "Luigisbox\\Catalog\\": ""
+      "Luigisbox\\Integration\\": ""
     }
   }
 }

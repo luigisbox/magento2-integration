@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace Luigisbox\Catalog\Model;
+namespace Luigisbox\Integration\Model;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\ScopeInterface;
 
-class LuigisboxScriptManagement implements \Luigisbox\Catalog\Api\LuigisboxScriptManagementInterface
+class LuigisboxScriptManagement implements \Luigisbox\Integration\Api\LuigisboxScriptManagementInterface
 {
     protected $request;
 

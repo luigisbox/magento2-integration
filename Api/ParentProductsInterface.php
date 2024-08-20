@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Luigisbox\Catalog\Api;
+namespace Luigisbox\Integration\Api;
 
 interface ParentProductsInterface
 {

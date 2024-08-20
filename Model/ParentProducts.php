@@ -5,13 +5,13 @@
  */
 declare(strict_types=1);
 
-namespace Luigisbox\Catalog\Model;
+namespace Luigisbox\Integration\Model;
 
 use Magento\ConfigurableProduct\Model\Product\Type\Configurable;
 use Magento\GroupedProduct\Model\Product\Type\Grouped;
 use Magento\Bundle\Model\ResourceModel\Selection;
 
-class ParentProducts implements \Luigisbox\Catalog\Api\ParentProductsInterface
+class ParentProducts implements \Luigisbox\Integration\Api\ParentProductsInterface
 {
     protected $request;
 

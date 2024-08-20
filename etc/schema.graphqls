@@ -1,5 +1,5 @@
 interface ProductInterface {
     custom_attributes_luigi(filters: AttributeFilterInput): ProductCustomAttributes
         @doc(description: "Same as 'custom_attributesV2', but able to deal with null values.")
-        @resolver(class: "Luigisbox\\Catalog\\Model\\Resolver\\Product\\ProductCustomAttributesLuigi")
+        @resolver(class: "Luigisbox\\Integration\\Model\\Resolver\\Product\\ProductCustomAttributesLuigi")
 }

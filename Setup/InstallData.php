@@ -1,6 +1,6 @@
 <?php
 
-namespace Luigisbox\Catalog\Setup;
+namespace Luigisbox\Integration\Setup;
 
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;

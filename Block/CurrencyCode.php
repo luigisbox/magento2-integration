@@ -1,6 +1,6 @@
 <?php
 
-namespace Luigisbox\Catalog\Block;
+namespace Luigisbox\Integration\Block;
 
 class CurrencyCode extends \Magento\Framework\View\Element\Template
 {

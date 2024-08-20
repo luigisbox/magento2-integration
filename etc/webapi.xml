@@ -8,13 +8,13 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <route url="/V1/insert-script" method="POST">
-        <service class="Luigisbox\Catalog\Api\LuigisboxScriptManagementInterface" method="postLuigisboxScript"/>
+        <service class="Luigisbox\Integration\Api\LuigisboxScriptManagementInterface" method="postLuigisboxScript"/>
         <resources>
             <resource ref="Magento_Backend::content"/>
         </resources>
     </route>
     <route url="/V1/parent-products-skus" method="POST">
-		<service class="Luigisbox\Catalog\Api\ParentProductsInterface" method="getParentSkusByChildIds"/>
+		<service class="Luigisbox\Integration\Api\ParentProductsInterface" method="getParentSkusByChildIds"/>
 		<resources>
 			<resource ref="Magento_Catalog::products"/>
 		</resources>
