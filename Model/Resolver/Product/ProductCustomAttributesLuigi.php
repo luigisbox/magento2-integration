@@ -91,10 +91,8 @@ class ProductCustomAttributesLuigi implements ResolverInterface
     ) {
         // If the classes exist, we can compute product's custom attributes
         if ($this->getAttributeValue && $this->getFilteredAttributes) {
-            $filtersArgs = $args['filters'] ?? [];
-
             $productCustomAttributes = $this->getFilteredAttributes->execute(
-                $filtersArgs,
+                [],
                 ProductAttributeInterface::ENTITY_TYPE_CODE
             );
 
