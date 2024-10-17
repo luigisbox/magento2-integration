@@ -15,6 +15,10 @@ Upon its installation and activation, this extension:
 - Includes a special Luigi's Box script into to the HTML header of the store. The whole (frontend) integration of Luigi's Box services is delivered through the script.
 - Ensures all the product data is synchronized to Luigi's Box Catalog Services. To achieve this, it creates custom REST endpoints and GraphQL attributes used by the synchronization process.
 
+This extension requires Magento version 2.3.1 or higher.
+
+Installation process relies on your Magento server being publicly accessible, so installation on localhost will not succeed.
+
 ## Installation
 
 1. **Add the Luigi's Box extension to your Magento 2 shop:** (this can be done manually or by using `composer`)
