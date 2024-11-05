@@ -2,4 +2,16 @@ interface ProductInterface {
     custom_attributes_luigi: String
         @doc(description: "Similar to 'custom_attributesV2', but able to deal with null values. Returns the result as JSON string. Returns 'null' as string for versions 2.4.6 and lower.")
         @resolver(class: "Luigisbox\\Integration\\Model\\Resolver\\Product\\ProductCustomAttributesLuigi")
+    quantity_luigi: Float
+        @doc(description: "Luigi's Box integration of quantity information")
+        @resolver(class: "Luigisbox\\Integration\\Model\\Resolver\\Product\\ProductQuantityResolver")
+    warehouses_luigi: [WarehouseInfoOutputLuigi]
+        @doc(description: "Luigi's Box integration of warehouses information")
+        @resolver(class: "Luigisbox\\Integration\\Model\\Resolver\\Product\\ProductWarehousesResolver")
+}
+
+type WarehouseInfoOutputLuigi {
+    source_code: String
+    quantity: Float
+    status: String
 }
