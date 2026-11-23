@@ -27,6 +27,8 @@ class CreateIntegration implements DataPatchInterface
         $this->integrationManager->processIntegrationConfig(['LuigisboxIntegration']);
 
         $this->moduleDataSetup->endSetup();
+
+        return $this;
     }
 
     /**
